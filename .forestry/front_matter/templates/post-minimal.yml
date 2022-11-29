@@ -5,9 +5,13 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: excerpt_separator
-  label: excerpt_separator
+  default: post
+- name: published
+  type: text
+  config:
+    required: false
+  label: published
+  default: 'false'
 - type: text
   name: title
   label: title
@@ -19,3 +23,8 @@ fields:
 - type: boolean
   name: comments
   label: comments
+  default: true
+- type: text
+  name: excerpt_separator
+  label: excerpt_separator
+  default: "<!--more-->"
