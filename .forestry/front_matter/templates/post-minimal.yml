@@ -11,6 +11,11 @@ fields:
 - type: text
   name: title
   label: title
+- name: categories
+  type: text
+  config:
+    required: false
+  label: categories
 - type: boolean
   name: comments
   label: comments
