@@ -6,12 +6,10 @@ fields:
   name: layout
   label: layout
   default: post
+  hidden: true
 - name: published
-  type: text
-  config:
-    required: false
+  type: boolean
   label: published
-  default: 'false'
 - type: text
   name: title
   label: title
@@ -28,3 +26,4 @@ fields:
   name: excerpt_separator
   label: excerpt_separator
   default: "<!--more-->"
+  hidden: true
