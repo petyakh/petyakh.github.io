@@ -27,3 +27,5 @@ fields:
   label: excerpt_separator
   default: "<!--more-->"
   hidden: true
+pages:
+- _posts/блогінг-у-проміжку-між-повітряними-тривогами.md
