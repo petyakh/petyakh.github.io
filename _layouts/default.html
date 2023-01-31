@@ -13,6 +13,23 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <style>
+      #content {
+        width:80%; 
+        float:left;
+      }
+
+      #sidebar {
+        width:20%; 
+        float:right;
+        padding-left: 20px;
+        background-color: #6f6c6c;
+      }
+      
+      .wrapper-masthead:after {
+        clear:both;
+      }
+    </style>
   </head>
 
   <body>
@@ -35,10 +52,10 @@
     </div>
 
     <div id="main" role="main" class="container">
-      <div id="content" style="width:75%; float:left;">
+      <div id="content">
       {{ content }}
       </div>
-      <div id="sidebar" style="width:25%; float:right;">
+      <div id="sidebar">
       <p>test</p>
       </div>
     </div>
