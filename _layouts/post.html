@@ -2,16 +2,19 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
 
-  <div class="entry">
+<article class="box post">
+  <!-- <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
+  <header>
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.date | date: "%B %e, %Y" }}</p>
+
     {{ content }}
-  </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+    {% include disqus.html %}
 
-  {% include disqus.html %}
+  </header>
+  
+
+
 </article>

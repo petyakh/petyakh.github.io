@@ -18,13 +18,13 @@
 				<section id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html">Dopetrope</a></h1>
+						<h1><a href="index.html">{{ site.name }}</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li>
+								<li><a href="{{ site.baseurl }}/">Головна</a></li>
+								<!-- <li>
 									<a href="#">Dropdown</a>
 									<ul>
 										<li><a href="#">Lorem ipsum dolor</a></li>
@@ -42,10 +42,12 @@
 										</li>
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
-								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li class="current"><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								</li> -->
+								<!---
+                <li><a href="{{ site.baseurl }}/">Left Sidebar</a></li>
+								<li class="current"><a href="{{ site.baseurl }}/">Right Sidebar</a></li>
+								<li><a href="{{ site.baseurl }}/">No Sidebar</a></li>
+                -->
 							</ul>
 						</nav>
 
@@ -58,30 +60,7 @@
 							<div class="col-8 col-12-medium">
 
 								<!-- Content -->
-								<article class="box post">
-									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-									<header>
-										<h2>Right sidebar</h2>
-										<p>Lorem ipsum dolor sit amet feugiat</p>
-									</header>
-									<p>
-										Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-										hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-										Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-										Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
-									</p>
-									<p>
-										Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-										a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-										placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
-									</p>
-
-
-								</article>
-
+                {{ content }}
 
 							</div>
 							<div class="col-4 col-12-medium">
