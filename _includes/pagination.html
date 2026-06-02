@@ -1,0 +1,15 @@
+<div class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="{{ site.baseurl }}/">← Назад</a>
+    {% else %}
+      <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}.html">← Назад</a>
+    {% endif %}
+  {% endif %}
+
+  <span>Сторінка {{ paginator.page }} з {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/page{{ paginator.next_page }}.html">Вперед →</a>
+  {% endif %}
+</div>
