@@ -1,0 +1,15 @@
+_site
+_editor
+editor/
+editor
+.DS_Store
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
+\!HOW TO RUN.txt
+node_modules

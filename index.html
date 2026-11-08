@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+  <article class="box post">
+    <!-- <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
+    <header>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.date | date: "%d.%m.%y" }}</p>
+    </header>
+    
+    {{ post.excerpt }}
+  </article>
+{% endfor %}
+
+{% include pagination.html %}
